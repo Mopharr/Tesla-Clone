@@ -8,13 +8,8 @@ import modelX from '../Asset/image/model-x.jpeg'
 import SolarP from '../Asset/image/solar-panel.jpeg' 
 import SolarR from '../Asset/image/solar-roof.jpeg' 
 import Acc from '../Asset/image/accessories.jpeg' 
-import fullpage from "fullpage.js"
 
 function Home() {
-
-    new fullpage('#fullpage', {
-        autoScrolling: true
-    })
 
     return (
         <div id = 'fullpage'>

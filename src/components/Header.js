@@ -3,18 +3,16 @@ import logo from "../Asset/image/logo.png"
 import {BsX} from 'react-icons/bs'
 import Style from '../Style/header.module.css'
 import styled from 'styled-components'
-import { selectCars } from "../features/car/carSlice"
-import { useSelector } from "react-redux"
+
 
 function Header() {
   const [burgerStatus, SetBurgerStatus] = useState(false)
-    // const cars = useSelector(selectCars)
-    // console.log(cars)
+ 
 
     return (
         <div className = {Style.main}>
-            <a className = {Style.logo}>
-                <img src = {logo}/>
+            <a href = "/" className = {Style.logo}>
+                <img src = {logo} alt = 'logo'/>
             </a>
             <div className = {Style.mid}>
                     <a href = "/">Model S</a>
@@ -29,7 +27,7 @@ function Header() {
                     <a href = '/'>Shop</a>
                     <a href = "/">Account</a>
                 </div> 
-                    <a onClick = {() => SetBurgerStatus(true)} >Menu</a>
+                    <a href = "##" onClick = {() => SetBurgerStatus(true)} >Menu</a>
             </div>
             <BurgerNav show = {burgerStatus} className ={Style.navLinks}>
                 <BsX  onClick = {() => SetBurgerStatus(false)} className = {Style.cancel} size = '2rem'/>
