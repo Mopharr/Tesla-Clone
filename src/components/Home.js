@@ -8,9 +8,7 @@ import modelX from '../Asset/image/model-x.jpeg'
 import SolarP from '../Asset/image/solar-panel.jpeg' 
 import SolarR from '../Asset/image/solar-roof.jpeg' 
 import Acc from '../Asset/image/accessories.jpeg' 
-
 function Home() {
-
     return (
         <div id = 'fullpage'>
         <Container>

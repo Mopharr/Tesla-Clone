@@ -1,0 +1,27 @@
+.main{
+    height: 40px;
+    width: 100%;
+    bottom: 0;
+}
+.main ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+.mainCap li{
+    list-style: none;
+    color: #fff;
+    padding: 10px;
+    font-weight: 800;
+}
+@media (max-width: 600px) {
+    .main ul{
+        flex-direction: column;
+    }
+    .dis{
+        display: none;
+    }
+}
